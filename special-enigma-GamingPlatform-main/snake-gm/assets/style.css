@@ -1,0 +1,124 @@
+/* body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+#game-container {
+    position: relative;
+}
+
+#game-canvas {
+    border: 2px solid #2c3e50;
+    background-color: #000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#score-display {
+    font-size: 24px;
+    margin: 15px 0;
+    color: #2c3e50;
+}
+
+#game-over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 36px;
+    display: none;
+}
+
+#name-input {
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+}
+
+#submit-score {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit-score:hover {
+    background-color: #2ecc71;
+}
+
+#start-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#start-button:hover {
+    background-color: #2ecc71;
+}
+
+.instructions {
+    margin-top: 20px;
+    color: #7f8c8d;
+    text-align: center;
+}
+
+#leaderboard {
+    margin-top: 20px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+#leaderboard h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+#scores-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#scores-list li {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+}
+
+#scores-list li:last-child {
+    border-bottom: none;
+} */

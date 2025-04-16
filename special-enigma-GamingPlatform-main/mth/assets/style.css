@@ -1,0 +1,498 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1a1a1a;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 670px;
+    border-radius: 10px;
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+    background-color: #0a0a0a;
+}
+
+.landing-page, .game-container, .leaderboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+}
+
+.landing-page img {
+    width: 100px;
+    margin-top: 100px;
+    filter: invert(100%);
+}
+
+.landing-page h1 {
+    text-align: center;
+    font-size: 45px;
+    margin: 20px;
+    color: #00ff00;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.landing-page button {
+    font-size: 25px;
+    padding: 5px;
+    height: 50px;
+    width: 300px;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    background: #1a1a1a;
+    color: #00ff00;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.landing-page button:hover {
+    background: #00ff00;
+    color: #1a1a1a;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+    width: 497px;
+    border-radius: 10px 10px 0 0;
+    background: #0a0a0a;
+    border-bottom: 2px solid #00ff00;
+}
+
+.header h3 {
+    font-size: 25px;
+    color: #00ff00;
+}
+
+.header img {
+    width: 50px;
+    filter: invert(100%);
+}
+
+.time-score {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 460px;
+    color: #00ff00;
+}
+
+.game-container > h1 {
+    font-size: 60px;
+    color: #00ff00;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    margin: 10px;
+}
+
+.game-container > button {
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid #00ff00;
+    background: #1a1a1a;
+    color: #00ff00;
+    transition: all 0.3s;
+}
+
+.game-container > button:hover {
+    background: #00ff00;
+    color: #1a1a1a;
+}
+
+.game-container > input {
+    font-size: 30px;
+    width: 70px;
+    padding: 5px;
+    text-align: center;
+    background: #1a1a1a;
+    border: 2px solid #00ff00;
+    color: #00ff00;
+    border-radius: 5px;
+}
+
+.number-buttons {
+    margin: 20px;
+    width: 320px;
+}
+
+.number-buttons button {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #00ff00;
+    font-size: 25px;
+    background: #1a1a1a;
+    color: #00ff00;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.number-buttons button:hover {
+    background: #00ff00;
+    color: #1a1a1a;
+}
+
+.footer button {
+    font-size: 20px;
+    border: 2px solid #00ff00;
+    width: 120px;
+    padding: 5px;
+    border-radius: 5px;
+    background: #1a1a1a;
+    color: #00ff00;
+    margin: 20px;
+    transition: all 0.3s;
+}
+
+.footer button:hover {
+    background: #00ff00;
+    color: #1a1a1a;
+}
+
+.leaderboard-container > h1 {
+    margin: 20px;
+    font-size: 35px;
+    color: #00ff00;
+}
+
+.leaderboard-header {
+    display: flex;
+    justify-content: space-between;
+    width: 430px;
+    padding: 0 15px;
+    color: #00ff00;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    padding: 20px;
+    justify-content: space-evenly;
+    background: #1a1a1a;
+    border: 1px solid #00ff00;
+    margin: 5px;
+    border-radius: 10px;
+    color: #00ff00;
+}
+
+.modal-content {
+    background-color: #0a0a0a !important;
+    color: #00ff00 !important;
+    border: 2px solid #00ff00 !important;
+}
+
+.modal-header {
+    border-bottom: 1px solid #00ff00 !important;
+}
+
+.form-control {
+    background-color: #1a1a1a !important;
+    border: 1px solid #00ff00 !important;
+    color: #00ff00 !important;
+}
+
+.btn-primary {
+    background-color: #00ff00 !important;
+    border-color: #00ff00 !important;
+    color: #1a1a1a !important;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0a0a0a;
+    background-image: radial-gradient(ellipse at center, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.7) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 670px;
+    border-radius: 10px;
+    border: 2px solid #f9cb28;
+    box-shadow: 0 0 15px rgba(249, 203, 40, 0.3);
+    background: rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+.landing-page, .game-container, .leaderboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.landing-page img {
+    width: 100px;
+    margin-top: 100px;
+    filter: invert(75%) sepia(60%) saturate(500%) hue-rotate(360deg);
+}
+
+.landing-page h1 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    margin: 20px 20px;
+    background: linear-gradient(90deg, #ff4d4d, #f9cb28);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.landing-page button {
+    font-size: 25px;
+    padding: 5px;
+    height: 50px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #ff4d4d, #f9cb28);
+    box-shadow: 0 5px 15px rgba(249, 203, 40, 0.3);
+    margin: 20px;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.landing-page button:hover {
+    font-size: 25px;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(249, 203, 40, 0.5);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+    width: 497px;
+    border-radius: 10px 10px 0 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid #f9cb28;
+}
+
+.header h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 !important;
+    color: #f9cb28;
+}
+
+.header img {
+    width: 50px;
+    filter: invert(75%) sepia(60%) saturate(500%) hue-rotate(360deg);
+}
+
+.time-score {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 460px;
+    color: #f9cb28;
+    text-shadow: none;
+}
+
+.game-container > h1 {
+    font-size: 60px;
+    color: #f9cb28;
+    text-shadow: 0 0 10px rgba(249, 203, 40, 0.5);
+    margin: 10px;
+}
+
+.game-container > button {
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #f9cb28;
+    background: rgba(30, 30, 30, 0.8);
+    color: #f9cb28;
+    transition: all 0.3s ease;
+}
+
+.game-container > button:hover {
+    font-size: 20px;
+    background: #f9cb28;
+    color: #000;
+    transform: translateY(-3px);
+}
+
+.game-container > input {
+    font-size: 30px;
+    width: 70px;
+    padding: 5px;
+    text-align: center;
+    background: rgba(30, 30, 30, 0.8);
+    outline: none;
+    border: 2px solid #f9cb28;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.number-buttons {
+    margin: 20px;
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.number-buttons button {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #f9cb28;
+    font-size: 25px;
+    background: rgba(30, 30, 30, 0.8);
+    color: #f9cb28;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.number-buttons button:hover {
+    font-size: 25px;
+    background: #f9cb28;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.footer button {
+    font-size: 20px;
+    border: 2px solid #f9cb28;
+    width: 120px;
+    padding: 5px;
+    border-radius: 5px;
+    background: rgba(30, 30, 30, 0.8);
+    color: #f9cb28;
+    cursor: pointer;
+    margin: 20px;
+    transition: all 0.3s ease;
+}
+
+.footer button:hover {
+    background: #f9cb28;
+    color: #000;
+    transform: translateY(-3px);
+}
+
+.leaderboard-container > h1 {
+    margin: 20px;
+    font-size: 35px;
+    color: #f9cb28;
+    text-shadow: 0 0 10px rgba(249, 203, 40, 0.5);
+}
+
+.leaderboard-header {
+    display: flex;
+    justify-content: space-between;
+    width: 430px;
+    padding: 0 15px;
+    color: #f9cb28;
+}
+
+.leaderboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    overflow-y: auto;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    padding: 20px;
+    justify-content: space-evenly;
+    background: rgba(30, 30, 30, 0.8);
+    border: 1px solid #f9cb28;
+    margin: 5px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.player:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(249, 203, 40, 0.3);
+}
+
+.player h4 {
+    text-align: center;
+    width: 310px;
+    color: #fff;
+}
+
+.player h4, .player h3 {
+    margin: 0 !important;
+}
+
+#submit {
+    background: linear-gradient(90deg, #ff4d4d, #f9cb28) !important;
+    color: #000 !important;
+    font-weight: bold;
+}
+
+/* Modal styles to match theme */
+.modal-content {
+    background: rgba(20, 20, 20, 0.9) !important;
+    border: 2px solid #f9cb28 !important;
+    color: #fff !important;
+}
+
+.modal-header {
+    border-bottom: 1px solid #f9cb28 !important;
+}
+
+.form-control {
+    background: rgba(30, 30, 30, 0.8) !important;
+    border: 1px solid #f9cb28 !important;
+    color: #fff !important;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #ff4d4d, #f9cb28) !important;
+    border: none !important;
+    color: #000 !important;
+    font-weight: bold;
+}
